@@ -1,0 +1,8 @@
+spring.application.name=swift-pay-x
+server.port=8080
+
+# Stripe Configuration (Set these in your Environment Variables or .env)
+stripe.secret.key=${STRIPE_SECRET_KEY}
+stripe.public.key=${STRIPE_PUBLIC_KEY}
+
+app.frontend.url=http://localhost:5173
