@@ -8,7 +8,7 @@ import { CreditCard, Rocket, DollarSign, Package } from 'lucide-react';
 
 const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLIC_KEY);
 
-const API_BASE_URL = 'http://localhost:8080/api/payments';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080/api/payments';
 
 function App() {
   const [amount, setAmount] = useState<string>('50');
