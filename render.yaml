@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: swift-pay-backend
+    runtime: docker
+    plan: free
+    region: oregon # You can change this to your preferred region
+    envVars:
+      - key: STRIPE_SECRET_KEY
+        sync: false # Set this in the Render Dashboard -> Environment
+      - key: STRIPE_PUBLIC_KEY
+        sync: false # Set this in the Render Dashboard -> Environment
+      - key: APP_FRONTEND_URL
+        value: https://your-frontend-url.vercel.app # UPDATE THIS with your Vercel URL
+      - key: SERVER_PORT
+        value: 8080
