@@ -10,6 +10,6 @@ services:
       - key: STRIPE_PUBLIC_KEY
         sync: false # Set this in the Render Dashboard -> Environment
       - key: APP_FRONTEND_URL
-        value: https://your-frontend-url.vercel.app # UPDATE THIS with your Vercel URL
+        value: https://swift-pay-x.vercel.app # UPDATED with your Vercel URL
       - key: SERVER_PORT
         value: 8080
